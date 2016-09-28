@@ -5,11 +5,11 @@ public class Circle {
 	public double radius;	
 	public double circumfrence;
 	public double area;
-	
+	int counter = 0;
 //constructor
 	public Circle(double r){
 		radius = r;
-		
+		counter++;
 		
 	}
 	
@@ -53,8 +53,9 @@ public class Circle {
 		}	
 			
 //Object Count
-		public  String getObjectCount(){
-			return null;
+		public  int getObjectCount(){
+			
+			return counter++;
 			
 		}
 
