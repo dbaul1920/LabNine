@@ -11,6 +11,7 @@ System.out.println("Please enter a radius: ");
 	Scanner input = new Scanner(System.in);
 	double radius = input.nextDouble();
 	Circle c = new Circle(radius);
+	c.getObjectCount();
 	System.out.println("Area: "+ c.getFormattedArea());
 	System.out.println("Circumfrence: "+c.getFormattedCircumfrence());
 	
