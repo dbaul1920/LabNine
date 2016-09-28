@@ -7,10 +7,10 @@ public class Circle {
 	public double area;
 	
 //constructor
-	public Circle(double r, double c, double a){
-		radius = r;
-		circumfrence = c;
-		area = a;
+	public Circle(double radius){
+		double r = radius;
+		
+		
 	}
 	
 //radius	
@@ -22,6 +22,8 @@ public class Circle {
 	}	
 //Circumference	
 	public  double getCircumfrence(){
+			
+			double circumfrence=2*Math.PI*radius;
 			return circumfrence;
 	}
 	public void setCircumfrence(double c) {
@@ -29,11 +31,34 @@ public class Circle {
 	}		
 //Area	
 	public  double getArea(){
-			return area;
+		double area=Math.PI*Math.pow(radius, 2);	
+		return area;
 	}
-		public void setArea(double a) {
+		public void setArea(double area) {
 
 	}		
+/////Formated Results///////	
+
+//Formated Area
+		public  String getFormattedArea(){
+			return null;
+			
+		}
+		
+//Formated Circumference	
+			public String getFormattedCircumfrence() {
+			String formatNum=String.format("%10.2f%n",getFormattedCircumfrence());
+			return formatNum;
+		}	
+			
+//Object Count
+		public  String getObjectCount(){
+			return null;
+			jhglygiuhjoij
+		}
+
 	
-	
+
+
+
 }
